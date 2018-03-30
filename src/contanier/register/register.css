@@ -1,0 +1,69 @@
+#header {
+    background: #d44580;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+#register {
+    height: 100%;
+    background: #d44580;
+    color: white
+}
+
+#register p {
+    padding: 15px;
+    color: #f9c7d4;
+}
+
+#register form {
+    padding: 15px;
+}
+
+#register input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #e893ba;
+    width: 100%;
+    font-size: 15px;
+    height: 45px;
+    color: white;
+}
+
+#register input::-webkit-input-placeholder{
+    color: #f9c7d4;
+}
+
+#register input:-moz-placeholder{
+    color: #f9c7d4;
+}
+
+#register input::-moz-placeholder{
+    color: #f9c7d4;
+}
+
+#register input:-ms-input-placeholder{
+    color: #f9c7d4;
+}
+
+#register input:focus{
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+#register .login_btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#register .login_btn button {
+    width: 200px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 18px;
+    color: white;
+}

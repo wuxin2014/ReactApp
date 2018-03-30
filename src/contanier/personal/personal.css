@@ -1,0 +1,88 @@
+#personal_wrap {
+    height: 100%;
+    background: #d44580;
+}
+
+#header {
+    background: #d44580;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+
+#un_login form {
+    padding: 15px;
+    color: white;
+}
+
+#un_login input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #e893ba;
+    width: 100%;
+    font-size: 15px;
+    height: 45px;
+    color: white;
+}
+
+#un_login input::-webkit-input-placeholder{
+    color: #f9c7d4;
+}
+
+#un_login input:-moz-placeholder{
+    color: #f9c7d4;
+}
+
+#un_login input::-moz-placeholder{
+    color: #f9c7d4;
+}
+
+#un_login input:-ms-input-placeholder{
+    color: #f9c7d4;
+}
+
+#un_login input:focus{
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+#un_login .login_btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#un_login .login_btn button {
+    width: 200px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 18px;
+    color: white;
+    font-size: 18px;
+}
+
+
+#grid_wrap {
+    width:100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#grid {
+    background: white;
+    display: flex;
+    border-bottom: 1px solid #a2a3a3;
+}
+
+#grid div {
+    flex: 1;
+    text-align: center;
+    color: #666666;
+    height: 120px;
+    line-height: 120px;
+    border-left: 1px solid #a2a3a3;
+}

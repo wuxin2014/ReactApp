@@ -1,0 +1,30 @@
+.item {
+    padding: 10px;
+    display: flex;
+}
+.item:hover {
+    background: aquamarine;
+}
+.item img {
+    display: block;
+    width: 140px;
+    height: 80px;
+}
+.item .content_des {
+    padding: 0 15px;
+}
+.item .content_des .big_title {
+    font-size: 20px;
+    color: #000000;
+}
+.item .content_des .small_title {
+    font-size: 14px;
+    color: #a3a3a3;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+.item .content_des p {
+    color: #bdbdbd;
+    font-size: 12px;
+}
