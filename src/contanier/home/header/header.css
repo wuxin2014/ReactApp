@@ -1,0 +1,13 @@
+body, ul, p {
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  background: #d44580;
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  line-height: 50px;
+}
