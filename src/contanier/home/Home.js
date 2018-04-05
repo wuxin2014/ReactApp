@@ -5,20 +5,31 @@ import Header from '../../components/header/Header';
 import Slider from '../../components/slider/Slider';
 
 const slides = [{
-  background: "#efefef",
+  background: "#e893ba",
   link: "https://zhuangtongfa.github.io/"
 }, {
   background: "#cdcdcd",
   link: "https://zhuangtongfa.github.io/"
 }, {
-  background: "#d44580",
+  background: "orange",
   link:"https://zhuangtongfa.github.io/"
 }];
+
+const icons = {
+  home: "/static/img/home.png",
+  personal: "/static/img/icon_centre.png"
+};
 
 const Home = () => {
   return (
     <div style={{height: '100%'}}>
-      <Header title="魅力女人" />
+      <Header
+          title="魅力女人"
+          leftIcon={icons.home}
+          rightIcon={icons.personal}
+          leftHandle={() => {alert('aa');}}
+          rightHandle={() => {alert('aa');}} />
+
       <Slider slides= {slides} time="2000" />
       <ListItem />
       <ListItem />

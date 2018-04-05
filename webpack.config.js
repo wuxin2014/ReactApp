@@ -29,7 +29,7 @@ const config = {
   },
   devServer: {
     port: 9090,
-    contentBase: '/',
+    contentBase: './src', // 本地服务器所加载的页面所在的目录
     inline: true, // 实时刷新
     hot: true,
     open: true,
