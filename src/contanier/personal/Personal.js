@@ -1,11 +1,11 @@
 import React from 'react';
 import './personal.css';
 
-const Personal = () => {
+const Personal = ({history}) => {
   return(
       <div id="personal_wrap">
         <header id="header">
-          <img src="/static/img/back.png" style={{width: 40, height: 40}} />
+          <img src="/static/img/back.png" style={{width: 40, height: 40}} onClick={() => {history.goBack();}} />
           <h2>个人中心</h2>
           <span>注册</span>
         </header>

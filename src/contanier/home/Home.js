@@ -20,7 +20,7 @@ const icons = {
   personal: "/static/img/icon_centre.png"
 };
 
-const Home = () => {
+const Home = ({history}) => {
   return (
     <div style={{height: '100%'}}>
       <Header
@@ -28,7 +28,7 @@ const Home = () => {
           leftIcon={icons.home}
           rightIcon={icons.personal}
           leftHandle={() => {alert('aa');}}
-          rightHandle={() => {alert('aa');}} />
+          rightHandle={() => {history.push('/personal')}} />
 
       <Slider slides= {slides} time="2000" />
       <ListItem />
