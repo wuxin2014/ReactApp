@@ -1,20 +1,28 @@
-.item {
+.women_list_item_wrap {
     padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-bottom: 1px solid #cccccc;
 }
-.item:hover {
+
+.women_list_item_wrap:hover {
     background: aquamarine;
 }
-.item img {
-    display: block;
-    width: 140px;
+
+.women_img {
+    width: 100px;
     height: 60px;
 }
-.item .content_des {
+
+.women_list_item_right{
     padding: 0 15px;
+}
+
+.women_list_item_right p {
+    color: #bdbdbd;
+    font-size: 12px;
+    padding-top: 10px;
 }
 
 .title_wrap {
@@ -34,8 +42,3 @@
     color: #a3a3a3;
 }
 
-.item .content_des p {
-    color: #bdbdbd;
-    font-size: 12px;
-    padding-top: 10px;
-}

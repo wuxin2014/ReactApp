@@ -2,11 +2,11 @@ import React from 'react';
 import './home.css';
 import Header from '../../components/header/Header';
 import CustomText from '../../components/common/CustomText';
-import WomenPage from './WomenPage';
-import DoctorPage from './DoctorPage';
-import ActivityPage from './ActivityPage';
-import LifePage from './LifePage';
-import ConsultPage from './ConsultPage';
+import WomenPage from './women/WomenPage';
+import DoctorPage from './doctor/DoctorPage';
+import ActivityPage from './activity/ActivityPage';
+import LifePage from './life/LifePage';
+import ConsultPage from './consult/ConsultPage';
 
 
 const icons = {

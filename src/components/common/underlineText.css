@@ -1,0 +1,13 @@
+#underline_text_wrap {
+    flex:1;
+    height: 32px;
+    padding-top: 12px;
+    text-align: center;
+    color: #a3a3a3;
+}
+
+#underline_text_wrap:hover {
+    padding-top: 12px;
+    border-bottom: 2px solid #d44580;
+    color: #d44580;
+}
