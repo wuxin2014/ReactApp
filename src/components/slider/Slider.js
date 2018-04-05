@@ -3,6 +3,7 @@ import './slider.css';
 
 class Slider extends React.Component {
   constructor(props){
+    console.log('Slider-constructor');
     super(props);
     const slides = props.slides;
     this.state={
@@ -32,6 +33,7 @@ class Slider extends React.Component {
   }
 
   componentDidMount(){
+    console.log('Slider-componentDidMount');
     setInterval(()=>this.nextSlide(),this.props.time);
   }
 

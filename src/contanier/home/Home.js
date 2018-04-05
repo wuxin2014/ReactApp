@@ -1,41 +1,100 @@
 import React from 'react';
-import ListItem from '../../components/home/ListItem';
 import './home.css';
 import Header from '../../components/header/Header';
-import Slider from '../../components/slider/Slider';
+import CustomText from '../../components/common/CustomText';
+import WomenPage from './WomenPage';
+import DoctorPage from './DoctorPage';
+import ActivityPage from './ActivityPage';
+import LifePage from './LifePage';
+import ConsultPage from './ConsultPage';
 
-const slides = [{
-  background: "#e893ba",
-  link: "https://zhuangtongfa.github.io/"
-}, {
-  background: "#cdcdcd",
-  link: "https://zhuangtongfa.github.io/"
-}, {
-  background: "orange",
-  link:"https://zhuangtongfa.github.io/"
-}];
 
 const icons = {
   home: "/static/img/home.png",
   personal: "/static/img/icon_centre.png"
 };
 
-const Home = ({history}) => {
-  return (
-    <div style={{height: '100%'}}>
-      <Header
-          title="魅力女人"
-          leftIcon={icons.home}
-          rightIcon={icons.personal}
-          leftHandle={() => {alert('aa');}}
-          rightHandle={() => {history.push('/personal')}} />
+const bottomData = [
+  {
+    icon: "static/img/icon_life.png",
+    text: "生活"
+  }, {
+    icon: "static/img/icon_consult.png",
+    text: "资讯"
+  }, {
+    icon: "static/img/my.png",
+    text: "魅力女人"
+  }, {
+    icon: "static/img/icon_activity.png",
+    text: "活动"
+  }, {
+    icon: "static/img/icon_doctor.png",
+    text: "医生"
+  }
+];
 
-      <Slider slides= {slides} time="2000" />
-      <ListItem />
-      <ListItem />
-      <ListItem />
-    </div>
-  );
-};
+function showPage(index, history) {
+  switch(index){
+    case 0:
+      return (<LifePage />);
+    case 1:
+      return (<ConsultPage />);
+    case 2:
+      return (<WomenPage history={history} />);
+    case 3:
+      return (<ActivityPage />);
+    case 4:
+      return (<DoctorPage />);
+
+  }
+}
+
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      curIndex: 0,
+    };
+    this.handleBottom = this.handleBottom.bind(this);
+  }
+
+
+  handleBottom(index) {
+    this.setState({
+      curIndex: index
+    });
+  }
+
+  render() {
+    const {history} = this.props;
+    const {curIndex} = this.state;
+    const title = bottomData[curIndex].text;
+    return (
+        <div style={{height: '100%'}}>
+          <Header
+              title={title}
+              leftIcon={icons.home}
+              rightIcon={icons.personal}
+              leftHandle={() => {alert('aa');}}
+              rightHandle={() => {history.push('/personal')}} />
+          <div>
+            {
+              showPage(curIndex, history)
+            }
+          </div>
+
+          <div id="nav_bottom">
+            {
+              bottomData.map((item, index) => {
+                return (
+                    <CustomText key={index} icon={item.icon} text={item.text} handleClick={() => this.handleBottom(index)} />
+                );
+              })
+            }
+          </div>
+        </div>
+    );
+  }
+}
 
 export default Home;

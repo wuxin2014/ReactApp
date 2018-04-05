@@ -35,7 +35,7 @@
     background: transparent url("/static/img/icon_user.png") no-repeat -10px top;
 }
 
-#un_login form input:nth-child(2){
+#un_login form input:nth-child(3){
     background: transparent url("/static/img/icon_pwd.png") no-repeat -10px top;
 }
 
@@ -83,14 +83,14 @@
     bottom: 0;
     column-count: 3;
     column-gap: 0px;
-    column-rule: 1px solid #a2a3a3;
+    column-rule: 1px solid #cccccc;
     background: white;
 }
 
 #grid_wrap div {
     text-align: center;
     height: 120px;
-    border-bottom: 1px solid #a2a3a3;
+    border-bottom: 1px solid #cccccc;
     display: flex;
     flex-direction: column;
     justify-content: center;
