@@ -1,18 +1,17 @@
 #header {
+    height: 50px;
+    background: #d44580;
+    text-align: center;
+    color: white;
+    padding: 0 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #d44580;
-    height: 50px;
-    text-align: center;
-    color: white;
-    padding: 0 5px;
 }
 
 #header img {
     width: 40px;
-    height: 40px;
 }
 
 #header span {

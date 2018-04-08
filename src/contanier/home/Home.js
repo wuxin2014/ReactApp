@@ -47,13 +47,15 @@ class Home extends React.Component {
     const {curIndex} = this.state;
     const title = bottomData[curIndex].text;
     return (
-        <div style={{height: '100%'}}>
-          <Header
-            title={title}
-            leftIcon={icons.home}
-            rightIcon={icons.personal}
-            leftHandle={() => {alert('aa');}}
-            rightHandle={() => {history.push('/personal')}} />
+        <div style={{position: 'relative', paddingBottom: 80, paddingTop: 50}}>
+          <div style={{width: '100%', position: 'fixed', top: 0, left: 0}}>
+            <Header
+              title={title}
+              leftIcon={icons.home}
+              rightIcon={icons.personal}
+              leftHandle={() => {alert('aa');}}
+              rightHandle={() => {history.push('/personal')}} />
+          </div>
           <div>
             {
               showPage(curIndex, history)

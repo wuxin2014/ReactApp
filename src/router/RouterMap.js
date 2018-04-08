@@ -12,7 +12,7 @@ import MainPage from '../contanier/MainPage';
 const RouterMap = () => {
   return (
     <Router>
-      <div style={{height: 640, overflow: 'hidden'}}>
+      <div style={{height: 640}}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/home" component={MainPage} />

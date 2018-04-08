@@ -57,6 +57,8 @@ const gridData = [
   }
 ];
 
+const activityTabData = ['优惠活动', '会员活动', '亲子活动'];
+
 const adviseTip = '您可以把你的意见与建议反馈给我们，告诉我们改进的方向，我们会及时查看和处理您的反馈，谢谢您的支持！';
 
 module.exports = {
@@ -64,4 +66,5 @@ module.exports = {
   bottomData,
   gridData,
   adviseTip,
+  activityTabData,
 };
