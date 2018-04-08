@@ -6,8 +6,7 @@
     color: #a3a3a3;
 }
 
-#underline_text_wrap:hover {
-    padding-top: 12px;
+#underline_text_wrap:hover, .active {
     border-bottom: 2px solid #d44580;
     color: #d44580;
 }

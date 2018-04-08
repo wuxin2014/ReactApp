@@ -33,7 +33,7 @@ class DoctorPage extends React.Component {
     const {curIndex} = this.state;
     return (
         <div>
-          <CommonTab tabData={tabData} handleSelect={this.setCurIndex} />
+          <CommonTab tabData={tabData} handleSelect={this.setCurIndex} curTab={curIndex} />
           <div>
             {
               showPage(curIndex)

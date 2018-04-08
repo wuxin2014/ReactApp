@@ -49,11 +49,11 @@ class Home extends React.Component {
     return (
         <div style={{height: '100%'}}>
           <Header
-              title={title}
-              leftIcon={icons.home}
-              rightIcon={icons.personal}
-              leftHandle={() => {alert('aa');}}
-              rightHandle={() => {history.push('/personal')}} />
+            title={title}
+            leftIcon={icons.home}
+            rightIcon={icons.personal}
+            leftHandle={() => {alert('aa');}}
+            rightHandle={() => {history.push('/personal')}} />
           <div>
             {
               showPage(curIndex, history)
@@ -64,7 +64,12 @@ class Home extends React.Component {
             {
               bottomData.map((item, index) => {
                 return (
-                    <CustomText key={index} icon={item.icon} text={item.text} handleClick={() => this.handleBottom(index)} />
+                  <CustomText
+                    key={index}
+                    icon={item.icon}
+                    text={item.text}
+                    handleClick={() => this.handleBottom(index)}
+                    active={curIndex === index ? 'tab_active' : '' } />
                 );
               })
             }

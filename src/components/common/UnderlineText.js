@@ -1,11 +1,11 @@
 import React from 'react';
 import './underlineText.css';
 
-const UnderlineText = ({text, selectTab}) => {
+const UnderlineText = ({text, selectTab, active}) => {
   return (
-      <div id="underline_text_wrap" onClick={selectTab}>
-        {text}
-      </div>
+    <div id="underline_text_wrap" className={active} onClick={selectTab}>
+      {text}
+    </div>
   );
 };
 

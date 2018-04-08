@@ -21,3 +21,7 @@
 .custom_text_wrap:hover {
     color: #d44580;
 }
+
+.tab_active {
+    color: #d44580;
+}
