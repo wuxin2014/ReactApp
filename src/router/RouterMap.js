@@ -9,6 +9,8 @@ import About from '../contanier/personal/about/About';
 import Feedback from '../contanier/personal/feedback/Feedback';
 import MainPage from '../contanier/MainPage';
 import ForgetPwd from '../contanier/forget/ForgetPwd';
+import SettingPage from '../contanier/personal/setting/SettingPage';
+import IntegralPage from '../contanier/personal/integral/IntegralPage';
 
 const RouterMap = () => {
   return (
@@ -21,6 +23,8 @@ const RouterMap = () => {
           <Route path="/personal/about" component={About} />
           <Route path="/personal/collect" component={Collect} />
           <Route path="/personal/feedback" component={Feedback} />
+          <Route path="/personal/integral" component={IntegralPage} />
+          <Route path="/personal/setting" component={SettingPage} />
           <Route path="/personal" component={Personal} />
           <Route path="/forgetPwd" component={ForgetPwd} />
           <Route path="*" component={NotFound} />

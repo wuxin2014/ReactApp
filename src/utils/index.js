@@ -28,7 +28,7 @@ const gridData = [
   {
     text: '积分',
     icon: '/static/img/jifen.png',
-    targetUrl: '/personal/jifen',
+    targetUrl: '/personal/integral',
   },
   {
     text: '收藏',
