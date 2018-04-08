@@ -4,5 +4,6 @@
 3. 安装各种需要的依赖:
 npm install webpack --save-dev
 
+https://github.com/FormidableLabs/nuka-carousel
 
 

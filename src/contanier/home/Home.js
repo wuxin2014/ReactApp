@@ -7,31 +7,8 @@ import DoctorPage from './doctor/DoctorPage';
 import ActivityPage from './activity/ActivityPage';
 import LifePage from './life/LifePage';
 import ConsultPage from './consult/ConsultPage';
+import {icons, bottomData} from '../../utils';
 
-
-const icons = {
-  home: "/static/img/home.png",
-  personal: "/static/img/icon_centre.png"
-};
-
-const bottomData = [
-  {
-    icon: "static/img/icon_life.png",
-    text: "生活"
-  }, {
-    icon: "static/img/icon_consult.png",
-    text: "资讯"
-  }, {
-    icon: "static/img/my.png",
-    text: "魅力女人"
-  }, {
-    icon: "static/img/icon_activity.png",
-    text: "活动"
-  }, {
-    icon: "static/img/icon_doctor.png",
-    text: "医生"
-  }
-];
 
 function showPage(index, history) {
   switch(index){

@@ -1,12 +1,15 @@
 import React from 'react';
 import './register.css';
+import Header from '../../components/header/Header';
+import { icons } from '../../utils';
 
-const Register = () => {
+const Register = ({history}) => {
   return (
     <div id="register">
-      <header id="header">
-        <h2>注册</h2>
-      </header>
+      <Header
+        leftIcon={icons.back}
+        leftHandle={() => {history.goBack();}}
+        title="注册" />
       <p>注册后专享女人魅力优质会员服务</p>
       <form>
         <label>

@@ -7,9 +7,20 @@
     height: 50px;
     text-align: center;
     color: white;
+    padding: 0 5px;
 }
 
 #header img {
     width: 40px;
     height: 40px;
+}
+
+#header span {
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
 }

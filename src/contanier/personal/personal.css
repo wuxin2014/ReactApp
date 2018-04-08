@@ -3,19 +3,6 @@
     background: #d44580;
 }
 
-#header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #d44580;
-    height: 50px;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-}
-
-
 #un_login form {
     padding: 15px;
     color: white;
