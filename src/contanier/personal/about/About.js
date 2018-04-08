@@ -9,7 +9,7 @@ const About = ({history}) => {
             leftIcon={icons.back}
             leftHandle={() => {history.goBack();}}
             title="关于我们" />
-        <img src="/static/img/swipe1.jpg" />
+        <img src="/static/img/swipe1.jpg" style={{width: '100%'}}/>
         <p>
 
         </p>

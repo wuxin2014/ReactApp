@@ -28,7 +28,7 @@ const gridData = [
   {
     text: '积分',
     icon: '/static/img/jifen.png',
-    targetUrl: '/personal/collect',
+    targetUrl: '/personal/jifen',
   },
   {
     text: '收藏',
@@ -38,7 +38,7 @@ const gridData = [
   {
     text: '设置',
     icon: '/static/img/setting.png',
-    targetUrl: '/personal/collect',
+    targetUrl: '/personal/setting',
   },
   {
     text: '关于我们',
@@ -53,12 +53,15 @@ const gridData = [
   {
     text: '联系我们',
     icon: '/static/img/connect.png',
-    targetUrl: '/personal/collect',
+    targetUrl: '/personal/connect',
   }
 ];
+
+const adviseTip = '您可以把你的意见与建议反馈给我们，告诉我们改进的方向，我们会及时查看和处理您的反馈，谢谢您的支持！';
 
 module.exports = {
   icons,
   bottomData,
   gridData,
+  adviseTip,
 };

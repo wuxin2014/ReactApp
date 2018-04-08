@@ -1,7 +1,7 @@
 import React from 'react';
 import './personal.css';
 import Header from '../../components/header/Header';
-import { icons, gridData } from '../../../utils';
+import { icons, gridData } from '../../utils';
 
 
 
