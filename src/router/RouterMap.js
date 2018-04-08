@@ -8,6 +8,7 @@ import Collect from '../contanier/personal/collect/Collect';
 import About from '../contanier/personal/about/About';
 import Feedback from '../contanier/personal/feedback/Feedback';
 import MainPage from '../contanier/MainPage';
+import ForgetPwd from '../contanier/forget/ForgetPwd';
 
 const RouterMap = () => {
   return (
@@ -21,6 +22,7 @@ const RouterMap = () => {
           <Route path="/personal/collect" component={Collect} />
           <Route path="/personal/feedback" component={Feedback} />
           <Route path="/personal" component={Personal} />
+          <Route path="/forgetPwd" component={ForgetPwd} />
           <Route path="*" component={NotFound} />
         </Switch>
       </div>

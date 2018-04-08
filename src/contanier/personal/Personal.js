@@ -4,7 +4,6 @@ import Header from '../../components/header/Header';
 import { icons, gridData } from '../../utils';
 
 
-
 const Personal = ({history}) => {
   return(
       <div id="personal_wrap">
@@ -16,9 +15,11 @@ const Personal = ({history}) => {
           rightHandle={() => {history.push('/register');}} />
 
         <div id="un_login">
+          <p>注册成为魅力女人会员，获得积分</p>
           <form>
-            <input placeholder="请输入手机号" /><br />
+            <input placeholder="请输入用户名" /><br />
             <input placeholder="请输入密码" />
+            <a onClick={() => {history.push('/forgetPwd')}}>忘记密码</a>
             <div className="login_btn">
               <button>登录</button>
             </div>

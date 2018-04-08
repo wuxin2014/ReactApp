@@ -28,6 +28,7 @@ function showPage(index, history) {
 
 class Home extends React.Component {
   constructor(props) {
+    console.log('Home-constructor');
     super(props);
     this.state = {
       curIndex: 0,
@@ -79,6 +80,36 @@ class Home extends React.Component {
         </div>
     );
   }
+
+  componentWillMount() {
+    console.log('Home-componentWillMount');
+  }
+
+  componentDidMount() {
+    console.log('Home-componentDidMount');
+  }
+
+  componentWillReceiveProps(nextProps){
+    console.log('Home-componentWillReceiveProps');
+  }
+
+  shouldComponentUpdate(nextProps, nextState){
+    console.log('Home-shouldComponentUpdate');
+    return true;
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log('Home-componentWillUpdate');
+  }
+
+  componentDidUpdate() {
+    console.log('Home-componentDidUpdate');
+  }
+
+  componentWillUnmount() {
+    console.log('Home-componentWillUnmount');
+  }
+
 }
 
 export default Home;

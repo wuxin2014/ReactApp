@@ -3,9 +3,19 @@
     background: #d44580;
 }
 
-#un_login form {
+#un_login {
     padding: 15px;
+    color: #e893ba;
+}
+
+#un_login form {
     color: white;
+}
+
+#un_login a {
+    position: absolute;
+    right: 0;
+    padding: 10px;
 }
 
 #un_login input {

@@ -24,7 +24,7 @@ const PromotionFragment = () => {
       {
         data.map((infoItem) => {
           return (
-            <div style={{backgroundColor: 'white', marginTop: 10, padding: 10}}>
+            <div key={infoItem.id} style={{backgroundColor: 'white', marginTop: 10, padding: 10}}>
               <img src={infoItem.imgUrl} style={{width: '100%'}}/>
               <p>{infoItem.detailDes}</p>
             </div>
