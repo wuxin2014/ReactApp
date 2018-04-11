@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../../components/header/Header';
 import { icons } from '../../../utils';
 import CollectItem from './CollectItem';
+import CollectListItem from '../../../components/home/collect/CollectListItem';
 
 const collectData = [
   {
@@ -34,6 +35,18 @@ const Collect = ({history}) => {
             collectData.map((collectItem) => {
               return (
                 <CollectItem
+                    key={collectItem.id}
+                    itemData={collectItem}/>
+              );
+            })
+          }
+        </ul>
+
+        <ul style={{paddingTop: 10}}>
+          {
+            collectData.map((collectItem) => {
+              return (
+                <CollectListItem
                     key={collectItem.id}
                     itemData={collectItem}/>
               );

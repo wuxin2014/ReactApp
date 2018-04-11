@@ -1,0 +1,47 @@
+.collect_li {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 90px; /*没有高度显示不出来*/
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+.collect_div_wrap {
+    width: 120%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.collect_left {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.collect_left img {
+    width: 120px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.deleteWrap {
+    width: 90px;
+    height: 90px;
+    background: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteWrap img {
+    width: 40px;
+    height: 40px;
+}
