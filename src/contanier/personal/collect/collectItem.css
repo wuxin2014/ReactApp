@@ -1,0 +1,40 @@
+.collect-item {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.collect-item .collect {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    margin: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+.collect-item .collect img {
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+}
+.collect-item .collect div {
+    line-height: 18px;
+    padding: 2px 0;
+}
+.collect-item .handle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: azure;
+    color: #fff;
+    width: 70px;
+    margin: 1px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
