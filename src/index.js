@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RouterMap from './router/RouterMap';
+// import RouterLazyMap from './router/RouterLazyMap';
+import RouterLoadableMap from './router/RouterLoadableMap';
+// import AppTest from './container/AppTest';
 import './static/css/common.css';
 
 ReactDOM.render(
-    <RouterMap />,
-    document.getElementById('root')
+  <RouterLoadableMap />,
+  document.getElementById('root')
 );

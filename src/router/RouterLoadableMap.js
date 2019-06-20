@@ -1,18 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Loadable from 'react-loadable';
-
-import Home from '../contanier/home/Home';
-import NotFound from '../components/common/NotFound';
-import Register from '../contanier/register/Register';
-import Personal from '../contanier/personal/Personal';
-import Collect from '../contanier/personal/collect/Collect';
-import About from '../contanier/personal/about/About';
-import Feedback from '../contanier/personal/feedback/Feedback';
-import MainPage from '../contanier/MainPage';
-import ForgetPwd from '../contanier/forget/ForgetPwd';
-// import SettingPage from '../contanier/personal/setting/SettingPage';
-// import IntegralPage from '../contanier/personal/integral/IntegralPage';
 import Loading from '../components/Loading';
 
 /**
@@ -24,33 +12,26 @@ import Loading from '../components/Loading';
  增加可维护性：使用 React 的核心库，总比第三方库更容易维护
  */
 
-const LoadableComponent = Loadable({
-  loader: () => import(/* webpackChunkName:'integerPage'*/'../contanier/personal/integral/IntegralPage'),
+const ATest = Loadable({
+  loader: () => import(/* webpackChunkName:'ATest' */ '../container/ATest'),
   loading: Loading,
 });
 
-const LazySetComp = React.lazy(() => import(/* webpackChunkName: "setting" */'../contanier/personal/setting/SettingPage'));
+
+const BTest = Loadable({
+  loader: () => import(/* webpackChunkName:'BTest' */ '../container/BTest'),
+  loading: Loading,
+});
 
 
 const RouterMap = () => {
   return (
     <Router>
       <div style={{height: 640}}>
-        <React.Suspense fallback={<Loading />}>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/home" component={MainPage} />
-            <Route path="/register" component={Register} />
-            <Route path="/personal/about" component={About} />
-            <Route path="/personal/collect" component={Collect} />
-            <Route path="/personal/feedback" component={Feedback} />
-            <Route path="/personal/integral" component={LoadableComponent} />
-            <Route path="/personal/setting" component={LazySetComp} />
-            <Route path="/personal" component={Personal} />
-            <Route path="/forgetPwd" component={ForgetPwd} />
-            <Route path="*" component={NotFound} />
-          </Switch>
-        </React.Suspense>
+        <Switch>
+          <Route exact path="/" component={ATest} />
+          <Route exact path="/bTest" component={BTest} />
+        </Switch>
       </div>
     </Router>
   );
